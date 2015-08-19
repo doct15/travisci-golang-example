@@ -2,3 +2,12 @@ bmcgehee/atotto:
 
   PkgInclude:
     - '*'
+    
+  PreRelease:
+    - sudo curl -sL -o /usr/bin/gimme https://raw.githubusercontent.com/travis-ci/gimme/master/gimme
+    - sudo chmod +x /usr/bin/gimme
+    - gimme 1.5
+    - source ~/.gimme/envs/go1.5.env
+    - go get -d -v ./...
+    - go build -v ./...
+    - go test -v ./...
