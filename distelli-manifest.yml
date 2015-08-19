@@ -4,6 +4,8 @@ bmcgehee/atotto:
     - '*'
     
   PreRelease:
+    - sudo apt-get -y update
+    - sudo apt-get -y install curl
     - sudo curl -sL -o /usr/bin/gimme https://raw.githubusercontent.com/travis-ci/gimme/master/gimme
     - sudo chmod +x /usr/bin/gimme
     - gimme 1.5
