@@ -1,0 +1,4 @@
+bmcgehee/atotto:
+
+  PkgInclude:
+    - '*'
